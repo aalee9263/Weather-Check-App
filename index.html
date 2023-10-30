@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Check App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="mainForm">
+    <h1>
+        Weather Check App
+    </h1>
+    <form onsubmit="weatherCheck(event)" id="form">
+        Enter weather Condition:
+        <input type="number" id="weatherInput" required step="0.1">
+        <br>
+        <button id="btn">Check</button>
+        <h1 id="resultWindow">
+
+        </h1>
+    </form>
+</div>  
+    <script src="./weather.js"></script>  
+</body>
+</html>

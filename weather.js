@@ -17,7 +17,7 @@ function weatherCheck(event) {
     } else if (weatherInput >= 10){
         message = "Comfortable for physical & outdoor activities"
     } else if (weatherInput >= 1){
-        message = "To prevent chilling dress warmly"
+        message = "dress warmly to prevent chilling "
     } else if (weatherInput >= -1) {
         message = "Risk of Hypothermia and Frostbite"
     } else {

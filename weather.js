@@ -1,27 +1,27 @@
-function gradeCheck(event) {
+function weatherCheck(event) {
     event.preventDefault();
-    let gradeInput = document.querySelector("#gradeInput").value;
-    gradeInput = Number(gradeInput)
+    let weatherInput = document.querySelector("#weatherInput").value;
+    weatherInput = Number(weatherInput)
 
-    console.log(gradeInput);
+    console.log(weatherInput);
 
     let message = "";
 
  
-    if (gradeInput > 100){
-        message = "Enter number between 0-100"
-    } else if (gradeInput >= 80){
-        message = "Your grade is A+"
-    } else if (gradeInput >= 70){
-        message = "Your grade is A"
-    } else if (gradeInput >= 60){
-        message = "Your grade is B"
-    } else if (gradeInput >= 50){
-        message = "Your grade is C"
-    } else if (gradeInput >= 0) {
-        message = "F"
+    if (weatherInput >= 43){
+        message = "High temperatures can be life-threatening"
+    } else if (weatherInput >= 30){
+        message = "Risk of Heat Exhaustion and Heatstroke"
+    } else if (weatherInput >= 20){
+        message = "Generally comfortable for most people"
+    } else if (weatherInput >= 10){
+        message = "Comfortable for physical & outdoor activities"
+    } else if (weatherInput >= 1){
+        message = "To prevent chilling dress warmly"
+    } else if (weatherInput >= -1) {
+        message = "Risk of Hypothermia and Frostbite"
     } else {
-        message = "Enter number between 0-100"
+        message = "Danger of frostbite to exposed skin and extremities"
     }
 
 document.querySelector("#resultWindow").innerHTML = message
